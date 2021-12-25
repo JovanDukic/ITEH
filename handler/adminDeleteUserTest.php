@@ -11,7 +11,7 @@ if (isset($_POST["testID"])) {
 
     if ($connection->affected_rows > 0) {
         $controller->loadUserTests($_SESSION["userID"], $connection);
-        echo json_encode($controller->userTests);
+        echo "success";
     } else {
         echo "failed";
     }

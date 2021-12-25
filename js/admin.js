@@ -91,13 +91,13 @@ $(document).ready(function () {
             url: "../handler/adminDeleteUser.php",
             type: "POST",
             data: "userID=" + $userID,
-            dataType: "json",
             success: function (data) {
                 alert("User has been deleted!");
-                fillTable(data);
+                sendSearchRequest($("#search").val(), $("#filterValue").val());
+                sendSortRequest(val);
             },
             error: function (jqXHR, exception) {
-                alert("Error occurred!");
+                alert("Failed to delete user!");
             }
         });
     };

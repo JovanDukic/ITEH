@@ -11,7 +11,7 @@ if (isset($_POST["userID"])) {
 
     if ($connection->affected_rows > 0) {
         $controller->loadUsers($connection);
-        echo json_encode($controller->users);
+        echo "success";
     } else {
         echo "failed";
     }

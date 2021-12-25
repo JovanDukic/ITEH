@@ -52,11 +52,10 @@ $(document).ready(function () {
             url: "../handler/adminDeleteUserTest.php",
             type: "POST",
             data: "testID=" + $testID,
-            dataType: "json",
             success: function (data) {
-                console.log(data);
-                alert("Test has been deleted!");
-                fillTable(data);
+                alert("Test  has been deleted!");
+                sendSearchRequest($("#search").val(), $("#filterValue").val());
+                sendSortRequest(val);
             },
             error: function (jqXHR, exception) {
                 alert("Error occurred!");

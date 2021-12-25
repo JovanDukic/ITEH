@@ -35,8 +35,8 @@ create table if not exists UserTest(
     ) not null,
     result enum('positive', 'negative') not null,
     primary key(ID, userID, testID),
-    foreign key(userID) references User(ID),
-    foreign key(testID) references CovidTest(ID)
+    foreign key(userID) references User(ID) on delete cascade,
+    foreign key(testID) references CovidTest(ID) on delete cascade
 );
 
 insert into
