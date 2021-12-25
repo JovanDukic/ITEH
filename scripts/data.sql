@@ -40,6 +40,18 @@ create table if not exists UserTest(
 );
 
 insert into
+    User (
+        username,
+        password,
+        firstname,
+        lastname,
+        age,
+        gender
+    )
+values
+    ('admin', 'admin', 'Jovan', 'Dukic', 22, 'male');
+
+insert into
     CovidTest (type)
 values
     ('quick'),
