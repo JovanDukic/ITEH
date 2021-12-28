@@ -143,6 +143,7 @@ $(document).ready(function () {
         $("#sortLastname").prop("checked", false);
         $("#sortAge").prop("checked", false);
         $("#sortGender").prop("checked", false);
+        val = "";
     };
 
 });

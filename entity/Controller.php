@@ -152,7 +152,13 @@ class Controller
 
     function compareTypes($test1, $test2)
     {
-        return $test1->testID > $test2->testID;
+        if ($test1->testID == $test2->testID) {
+            return 0;
+        } else if ($test1->testID > $test2->testID) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 
     function compareAmbulances($test1, $test2)

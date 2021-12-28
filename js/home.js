@@ -44,6 +44,7 @@ $(document).ready(function () {
     });
 
     sendSortRequest = function ($flag) {
+        console.log($flag);
         request = $.ajax({
             url: "../handler/sort.php",
             type: "POST",
@@ -107,6 +108,7 @@ $(document).ready(function () {
         $("#sortType").prop("checked", false);
         $("#sortAmbulance").prop("checked", false);
         $("#sortResult").prop("checked", false);
+        val = "";
     };
 
 });

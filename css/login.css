@@ -6,8 +6,8 @@
     color: #fff;
     font-size: 1.5em;
     padding: 4%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: center;
     text-align: center;
     animation: entrance 2s ease 0s 1 normal none;
@@ -15,8 +15,8 @@
 
 .title {
     position: relative;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     animation-delay: 2s;
     animation: entrance 2s ease 0s 1 normal none, oscilate1 1.5s ease 2.5s 1 normal forwards, oscilate2 4s ease 3.8s infinite normal none;
 }

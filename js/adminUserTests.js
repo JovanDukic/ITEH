@@ -128,6 +128,7 @@ $(document).ready(function () {
         $("#sortType").prop("checked", false);
         $("#sortAmbulance").prop("checked", false);
         $("#sortResult").prop("checked", false);
+        val = "";
     };
 
 });
